@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function greet(name) {
+            console.log("good morning" +"" + name)
+        }
+       toclear= setTimeout(greet,3000,"rashmi")
+       console.log(toclear)
+       clearTimeout(toclear)
+        function wishes(name) {
+            console.log()
+        }
+        function wishes(name) {
+            console.log("happy birthday" +"" + name)
+        }
+      clearit= setInterval(wishes,3000,"rashmi");
+       console.log(clearit)
+       clearInterval(clearit);
+        
+       function displayTime() {
+        time = new Date();
+        console.log(time)
+        document.getElementById("time").innerHTML=time ;
+       }
+       setInterval(displayTime,1000);
+      
+
+ 
+    </script>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span id = "time" >time is being displayed</span>
+   
+</body>
+</html>
+
