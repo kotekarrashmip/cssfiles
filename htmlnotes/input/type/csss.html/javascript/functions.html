@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+       function sum(a,b,c) {
+        let d=a+b+c;
+      return d;
+       }
+      let returnvalue=sum(1,2,3);
+      console.log(returnvalue)
+       
+      //for loop
+      //let i=0;
+      //for(i=0;i<3;i++) {
+      //console.log(i)
+     // }
+     //for objects
+     let biodata = {
+         name:"rashmi" ,
+         age : 25,
+         hobby :"dancing",
+        }
+        for(key in biodata) {
+            console.log(`the ${key} "is" ${biodata[key]}`)
+        } 
+        //for array
+        let friends =["shaba","preni","rashmi"];
+        for(element of friends) {
+            console.log("hello " + element + " good morning" )
+        }
+
+        let friend =["shaba","preni","rashmi","manni"];
+        for(i=0;i<friend.length;i++) {
+            console.log( "hello " + friend[i] )
+        }
+
+        //while loop
+        let j=0;
+        while(j<4) {
+            console.log(`${j} is less than 4`)
+            j++
+        }
+
+        //do while loop
+        let k=3;
+        do{
+            console.log(`${k} is less than 4`)
+            k++;
+        } while(k<5)
+
+   </script> 
+   
+</body>
+</html>

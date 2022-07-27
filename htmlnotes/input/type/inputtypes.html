@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background-color :grey;
+        }
+        .container {
+            background-color: aqua;
+            max-width:700px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--input type text-->
+    <form action="/contact.html">
+        <div class="container">
+    <label for="fname">first name:</label>
+        <input type="text" id="fname" name="fname"><br>
+        <br>
+        <label for="lname">last name:</label>
+        <input type="text" id="lname" name="lname"><br>
+        <br>
+        <label for="user name">user name</label>
+        <input type="text" id="username" name:"username"><br>
+        <br>
+        <label for="pwd">passsword</label>
+        <input type="password" id="pwd" name:"pwd"><br>
+        <br>
+        <input type="radio" id="html" name="favourite_language" value="html">
+        <label for="Html">Html</label><br>
+        <input type="radio" id="css" name="favourite_language" value="css">
+        <label for="css">Css</label><br>
+        <input type="radio" id="java" name="favourite_language" value="java">
+        <label for="java">java</label><br>
+        <br>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="bike">
+        <label for="vehicle1">I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="car">
+        <label for="vehicle2">I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="boat">
+        <label for="vehicle3">I have a boat</label><br>
+        <br>
+        
+        <label for="favcolor">select u r favourite color :</label>
+        <input type="color" id="favcolor" name="favcolor" value="#ff00ff">
+        <br>
+        <label for="birthday">birthday :</label>
+        <input type="date" id="birthday" name="birthday">
+        <br>
+        <label for="datemin">enter the date after 2000-1-1 :</label>
+        <input type="date" id="datemin" name="datemin" min="2000-01-02"><br>
+        <br>
+        <label for="datemax">enter date before 31-12-2020 :</label>
+        <input type="date" id="datemax" name="maximum date" max="30-12-2020"><br>
+        <br>
+        <label for="birthdaytime">birthday (date and time):</label>
+        <input type="datetime-local" id="birthdaytime" name="birthdaytime"><br>
+        <br>
+        <label for="email">enter u r email</label>
+        <input type="email" id="email" name="email"><br>
+        <br>
+        <label for="myfile">select a file</label>
+        <input type="file" id="myfile" name="myfile"><br>
+        <br>
+        <label for="fname">first name:</label>
+        <input type="text" id="fname" name="fname"><br>
+        <br>
+        <input type="hidden" id="custId" name="custId" value="3487"><br>
+        <br>
+        <label for="birthdaymonth">birthday month and year:</label>
+        <input type="month" id="birthdaymonth" name="birthday month"><br>
+        <br>
+        <label for="quantity">quantity (between 1 and 5):</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="5"><br>
+        <br>
+        <label for="quantity">quantity (between 0 and 100):</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="100" step="10" value="30"><br>
+        <br>
+        <label for="vol">volume(between 0 and 50):</label>
+        <input type="range" id="vol" name="vol" min="0" max="50"><br>
+        <br>
+        <label for="gsearch">google search</label>
+        <input type="search" id="gsearch" name="gsearch"><br>
+        <br>
+        <label for="phone">enter a phone number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="789-987-1234" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+        <br>
+        <label for="clock">select a time:</label>
+        <input type="time" id="clock" name="timee"><br>
+        <br>
+        <label for="homepage">add u r homepage:</label>
+        <input type="url" id="homepage" name="fname"><br>
+        <br>
+        <label for="week">select a week:</label>
+        <input type="week" id="week" name="week"><br>
+        <br>
+        <!--readonly attribute allows reader to read the content and not to change-->
+        <label for="fname">first name:</label>
+        <input type="text" id="fname" name="fname" value="john" readonly><br>
+        <br>
+        <label for="fname">first name:</label>
+        <input type="text" id="fname" name="fname" value="john" disabled><br>
+        <br>
+        <!--this size specifies the width-->
+        <label for="fname">first name:</label>
+        <input type="text" id="fname" name="fname" size="30"><br>
+        <br>
+        <label for="pin">PIN</label>
+        <input type="text" id="pin" name="pin" size="4" maxlength="4"><br>
+        <br>
+        <label for="file">choose a file:</label>
+        <input type="file" id="fname" name="files" multiple><br>
+        <br>
+        <!--country code should be 3 letters and only alphabets(uppercase and lowercase) no numericals-->
+        <label for="country_code">country_code:</label>
+        <input type="text" id="country_code" name="country_code" pattern="[A-Za-z]{3}"><br>
+        <br>
+        <!--username specifies that the input field must be filled before submitting the form-->
+        <label for="username">username:</label>
+        <input type="text" id="username" name="username" required><br>
+        <br>
+        <label for="fname">first name:</label>
+        <input type="text" id="fname" name="fname" autofocus><br>
+        <br>
+        <label for="fname">first name:</label>
+        <input type="text" id="fname" name="fname" size="30"><br>
+        <!--for image adress right click and click on copy image adress-->
+        <input type="image" src="https://tse3.mm.bing.net/th?id=OIP.HIjGHzSB0wrsXTkP0LUdHwHaGL&pid=Api&P=0&w=198&h=166" alt="submit" width="48" height="48">
+         <br>
+         <label for="eemail">EMAIL:</label>
+        <input type="email" id="eemail" name="email" autocomplete="on"><br>
+         <br>
+         <input list="browsers" name="browsers">
+         <datalist id="browsers">
+         <option value="firefox">
+         <option value="internet explorer">
+         <option value="safari">
+         <option value="opera">
+         </datalist>
+
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+                
+    </form>
+</div>
+
+    
+    
+</body>
+</html>

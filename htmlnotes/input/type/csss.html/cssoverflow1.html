@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        div {
+            border:3px solid black;
+
+        }
+        .img1{
+            float:right
+        }
+        .img2{
+            float: left;
+        }
+        .clearfix {overflow:auto}
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>without clearfix</h1>
+    <div>
+        <img class="img1" src="https://jooinn.com/images/dramatic-landscape-7.jpg" alt="nature" width="150">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente necessitatibus at minima reprehenderit deserunt laboriosam, fugit ex accusamus placeat hic rerum. Deleniti deserunt mollitia repudiandae ex, nihil tenetur veritatis saepe!
+    </div>
+    <h2 style="clear:right">with clearfix</h2>
+    <div class="clearfix">
+        <img class="img2" src="https://jooinn.com/images/dramatic-landscape-7.jpg" alt="nature" width="150">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente necessitatibus at minima reprehenderit deserunt laboriosam, fugit ex accusamus placeat hic rerum. Deleniti deserunt mollitia repudiandae ex, nihil tenetur veritatis saepe!
+    </div>
+</body>
+</html>

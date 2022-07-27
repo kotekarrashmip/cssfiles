@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    div.static{
+        position:static;
+        border :2px solid red;
+
+    }
+    div.fixed {
+        position :fixed;
+        bottom: 0;
+        right:0;
+        width : 300px;
+        border : 3px solid black;
+
+    }
+    div.relative{
+        position: relative;
+        left:30px;
+        width:400px;
+        height:200px;
+        border:3px solid green;
+    }
+    div.absolute {
+        position: absolute;
+        top:80px;
+        right:0;
+        width: 200px;
+        height: 100px;
+        border:2px solid hotpink;
+    }
+    
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  background-color: #cae8ca;
+  border: 2px solid #4CAF50;
+}
+img{
+    position:absolute;
+    left:0px;
+    top:0px;
+    z-index:-1;/*this will place image behind texr*/
+}
+
+</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="static">this line will not move</div>
+    <div class="fixed">this will not move even if the screen is scrolled , bottom=0 and right=0 means it goes totally down and complete right</div>
+    <div class="relative">in this the position can be changed</div>
+    <div class="absolute">in this the position can be changed this goes sits near to ancesester position and moved when scrolled</div>
+    <p>Try to <b>scroll</b> inside this frame to understand how sticky positioning works.</p>
+
+<div class="sticky">I am sticky!</div>
+
+<div style="padding-bottom:100px">
+  <p>In this example, the sticky element sticks to the top of the page (top: 0), when you reach its scroll position.</p>
+  <p>Scroll back up to remove the stickyness.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+</div>
+<img src="http://thewowstyle.com/wp-content/uploads/2015/07/natural-water-bridge-hd-pictures.jpg.jpg" alt="nature" width="100" heiht="140">
+
+    
+</body>
+</html>

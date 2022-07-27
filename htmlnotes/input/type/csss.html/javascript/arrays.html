@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>javascript arrays</h2>
+    <p id ="demo 1"></p>
+    <p id = "demo 2"></p>
+    <p id = "demo 3"></p>
+    <p id = "demo 4"></p>
+    <p id = "demo 5"></p>
+    <button onclick="myFuction">try it</button>
+    <p id = "demo 6"></p>
+    <button onclick="myFuction">try it</button>
+    <p id = "demo 7"></p>
+    <script>
+        const cars= ["volvo","benze","maruti","swift"];
+        document.getElementById("demo 1").innerHTML=cars;
+        document.getElementById("demo 2").innerHTML= cars[0];
+        //acessing last element in a array
+        const bikes =["pulsar","rs","ns","pleasure"];
+        document.getElementById("demo 4").innerHTML=bikes[bikes.length-1];
+    //changing the 1st element of the array
+        const car= ["volvo","benze","maruti","swift"];
+        car[0]="opel";
+        document.getElementById("demo 3").innerHTML= car;
+        const bike =["pulsar","rs","ns","pleasure"];
+        document.getElementById("demo 5").innerHTML=bike.length;
+        const fruit = ["banana","apple","orange"];
+        document.getElementById("demo 6").innerHTML=fruit;
+        function myFunction() {
+            fruit.push("lemon");
+        document.getElementById("demo 6").innerHTML= fruit;
+    }
+    const fruits = ["banana","apple","orange"];
+        document.getElementById("demo 7").innerHTML=fruits;
+        function myFunction() {
+            fruits[fruits.length]="lemon";
+        document.getElementById("demo 7").innerHTML= fruits;
+        }       
+        
+
+        
+    </script>
+    
+</body>
+</html>

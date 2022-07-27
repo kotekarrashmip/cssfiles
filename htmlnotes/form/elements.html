@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>visible option values</h2>
+    <p>use size attribute to specify no.of visible values</p>
+    <form action="/contact.html">
+        <!--fieldset and lagend are used to put it in a box-->
+        <fieldset>
+            <legend>personal info</legend>
+        <label for ="cars">choose a car</label>
+        <select id="cars" name="cars" size="4" multiple>
+            <option value="jaguar">jaguar</option>
+            <option value ="benze">benze</option>
+            <option value="tata">tata</option>
+            <option value="maruti">maruti</option>  
+              </select><br><br>
+              <!--textarea used to write a message in a box -->
+              <textarea name="message" rows="10" cols="30">the cat was playing in the garden</textarea>
+              <!-- textarea using css .this is using css style sheet-->
+              <textarea name="message" style="width:100px ; height:100px;">the cat was playing in the garden</textarea><br>
+              <!--adding a button-->
+              <button type="button" onclick="alert ('hello world')"> click me</button><br>
+              </fieldset>
+             </form>
+    
+</body>
+</html>

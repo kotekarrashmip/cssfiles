@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        p.ex1 {
+            border: 1px solid black;
+            outline-style: dashed; /*dotted,solid,double,for 3d=groove,ridge,inset,outset,none,hidden*/
+            outline-color: hsl(0,20%,30%);/*rgb(120,130,150) , #ff5655,red*/
+            outline-width: thin;/*thick,medium or specify value 4px*/
+          }
+          
+          p.ex2 { outline : dotted ;}
+          p.ex3 {outline : thick ridge pink} /*width,style,color all in one*/
+          p.ex4 {
+              margin : 30px;
+              border : 1px solid black;
+              outline : 1px solid red;
+              outline-offset : 15px;
+          }
+          p.ex5{
+              border : 1px solid red;
+              outline-style :solid;
+              outline-color:invert;
+          }
+          
+       
+          
+
+          </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+   
+      
+      
+      
+      <h2>The outline-width Property</h2>
+      
+      <p class="ex1">A thin outline.</p>
+      <p class="ex2">A medium outline.</p>
+      <p class="ex3">A thick outline.</p>
+      <p class="ex4">this is outline-offset</p>
+      <p class="ex5"> this invert color shows outline color even though border is mentioned</p>
+
+     
+      
+    
+</body>
+</html> 

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>HTML FORMS</h2>
+    <form action="/contact.html" target="_blank" method="get" autocomplete="on" novalidate >
+        <!--when we use target="_bank after submitting it opens in new page" and by using method get u can see form values visible in adress bar of new user u can use this when its non cofidential next other method="post"   u can see form values not visible in adress bar of new user u can use this when its cofidential code next other is autocomplete="on" means it gives options while entering in box like to enter email it gives many email id based on which we entered earlier and off means it does not give option . novalidate means like e.g email should be like rashmikalal8@gmail.com u cant just write "rashmikalal" in this case it shows invalid so to not show invalid we use novalidate tag-->
+        <label for="fname">first name:</label><br>
+        <input type="text" id="fname" name="fname" value="Rashmi"><br>
+        <label for="lname">last name</label><br>
+        <input type="text" id="lname" name="lname" value="kalal"><br>
+        <label for="html">HTML</label>
+        <input type="radio" id="html" name="favourie language" value="HTML">
+        <br>
+        <label for="vehicle">i have bike</label>
+        <input type="checkbox" id="vehicle" name="vehicle" value="bike"><br>
+        <label for="cars">choose a car</label>
+        <select id="cars" name="cars">
+            <option value="audi">audi</option>
+            <option value="jaguar">jaguar</option>
+            <!--by writting selected in the box as soon as we run program it displays benze option-->
+            <option value="benze" selected>benze</option>
+        </select>
+
+        <input type="submit" value="submit">
+        
+
+    </form>
+
+    
+</body>
+</html>
